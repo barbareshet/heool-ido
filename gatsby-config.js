@@ -5,5 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
+    siteMetadata : {
+        title:"My Sweet Gatsby Site",
+        description:"My Gatsby Site Description"
+    },
+    plugins: [
+        {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+                pathToConfigModule: `src/utils/typography`,
+            },
+        },
+    ],
 }
